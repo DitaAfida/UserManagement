@@ -1,0 +1,14 @@
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\bin\Debug\DataAccess.exe.config
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\bin\Debug\DataAccess.exe
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\bin\Debug\Core.exe
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\bin\Debug\Core.pdb
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\obj\Debug\DataAccess.exe
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\obj\Debug\DataAccess.Migrations.newMigration.resources
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.Cache

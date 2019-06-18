@@ -1,0 +1,9 @@
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\Core\bin\Debug\Core.exe.config
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\Core\bin\Debug\Core.exe
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\Core\bin\Debug\Core.pdb
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\Core\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\Core\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\Core\obj\Debug\Core.exe
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\Core\obj\Debug\Core.pdb

@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\MyContext.cs" />
+    <Compile Include="Migrations\201906180945476_newMigration.cs" />
+    <Compile Include="Migrations\201906180945476_newMigration.Designer.cs">
+      <DependentUpon>201906180945476_newMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Aplication.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\District.cs" />
@@ -67,6 +73,19 @@
     <Compile Include="Models\Village.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AplicationVM.cs" />
+    <Compile Include="ViewModels\DepartmentVM.cs" />
+    <Compile Include="ViewModels\DistrictVM.cs" />
+    <Compile Include="ViewModels\EmployeeVM.cs" />
+    <Compile Include="ViewModels\PositionVM.cs" />
+    <Compile Include="ViewModels\ProvinceVM.cs" />
+    <Compile Include="ViewModels\RegencyVM.cs" />
+    <Compile Include="ViewModels\ReligionVM.cs" />
+    <Compile Include="ViewModels\RoleVM.cs" />
+    <Compile Include="ViewModels\UserApplicationVM.cs" />
+    <Compile Include="ViewModels\UserRoleVM.cs" />
+    <Compile Include="ViewModels\UserVM.cs" />
+    <Compile Include="ViewModels\VillageVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -77,6 +96,11 @@
       <Project>{84846E06-0B7C-4A98-BDE3-3D9575DE5BCA}</Project>
       <Name>Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201906180945476_newMigration.resx">
+      <DependentUpon>201906180945476_newMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

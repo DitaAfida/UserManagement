@@ -1,0 +1,10 @@
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\BusinessLogic\bin\Debug\BusinessLogic.exe.config
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\BusinessLogic\bin\Debug\BusinessLogic.exe
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\BusinessLogic\obj\Debug\BusinessLogic.exe
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\BusinessLogic\obj\Debug\BusinessLogic.pdb
