@@ -16,6 +16,7 @@ namespace DataAccess.Models
 
         [ForeignKey("Regency")]
         public int Regency_Id { get; set; }
+        public Regency Regency { get; set; }
 
         public District() { }
 
