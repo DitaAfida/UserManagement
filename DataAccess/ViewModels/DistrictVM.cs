@@ -1,19 +1,16 @@
-﻿using Core.Base;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Models
+namespace DataAccess.ViewModels
 {
-    [Table("TB_M_District")]
-    public class District : BaseModel
+    public class DistrictVM
     {
+        public int Id { get; set; }
         public string District_Name { get; set; }
 
-        [ForeignKey("Regency")]
         public int Regency_Id { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Base;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -8,13 +9,13 @@ using System.Threading.Tasks;
 namespace DataAccess.Models
 {
     [Table("TB_T_UserApplication")]
-    public class UserApplication
+    public class UserApplication : BaseModel
     {
         [ForeignKey("User")]
         public int User_Id { get; set; }
         public User User { get; set; }
         [ForeignKey("Application")]
         public int Application_Id { get; set; }
-        public Application Application { get; set; }
+        public Aplication Application { get; set; }
     }
 }

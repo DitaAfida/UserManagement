@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Models
 {
-    [Table("TB_M_Role")]
-    public class Role : BaseModel
+    [Table("TB_M_Religion")]
+    public class Religion : BaseModel
     {
-        public int Role_Name { get; set; }
+        public string Name { get; set; }
     }
 }

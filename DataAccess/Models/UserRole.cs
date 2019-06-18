@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Base;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace DataAccess.Models
 {
     [Table("TB_R_UserRole")]
-    public class UserRole
+    public class UserRole : BaseModel
     {
         [ForeignKey("Role")]
         public int User_Id { get; set; }
