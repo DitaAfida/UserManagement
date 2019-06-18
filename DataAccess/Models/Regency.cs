@@ -1,4 +1,5 @@
 ﻿using Core.Base;
+using DataAccess.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -16,6 +17,27 @@ namespace DataAccess.Models
         [ForeignKey("Province")]
         public int Province_Id { get; set; }
         public Province Province { get; set; }
+
+        public Regency() { }
+
+        public Regency(RegencyVM regencyVM)
+        {
+            this.Regency_Name = regencyVM.Regency_Name;
+            this.CreateDate = DateTimeOffset.Now.ToLocalTime();
+        }
+
+        public void Update(RegencyVM regencyVM)
+        {
+            this.Id = regencyVM.Id;
+            this.Regency_Name = regencyVM.Regency_Name;
+            this.UpdateDate = DateTimeOffset.Now.ToLocalTime();
+        }
+
+        public void Delete()
+        {
+            this.IsDelete = true;
+            this.DeleteDate = DateTimeOffset.Now.ToLocalTime();
+        }
 
     }
 }

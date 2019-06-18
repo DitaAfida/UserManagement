@@ -10,5 +10,18 @@ namespace DataAccess.ViewModels
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public ReligionVM() { }
+
+        public ReligionVM(string name)
+        {
+            this.Name = name;
+        }
+
+        public void Update(int id, string name)
+        {
+            this.Id = id;
+            this.Name = name;
+        }
     }
 }

@@ -10,5 +10,18 @@ namespace DataAccess.ViewModels
     {
         public int Id { get; set; }
         public string Position_Name { get; set; }
+
+        public PositionVM() { }
+
+        public PositionVM(string position_name)
+        {
+            this.Position_Name = position_name;
+        }
+
+        public void Update(int id, string position_name)
+        {
+            this.Id = id;
+            this.Position_Name = position_name;
+        }
     }
 }

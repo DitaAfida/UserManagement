@@ -6,11 +6,26 @@ using System.Threading.Tasks;
 
 namespace DataAccess.ViewModels
 {
-    pubic class VillageVM
+    public class VillageVM
     {
         public int Id { get; set; }
         public string Village_Name { get; set; }
 
         public int District_Id { get; set; }
+
+        public VillageVM() { }
+
+        public VillageVM(string village_name, int district_id)
+        {
+            this.Village_Name = village_name;
+            this.District_Id = district_id;
+        }
+
+        public void Update(int id, string village_name, int district_id)
+        {
+            this.Id = id;
+            this.Village_Name = village_name;
+            this.District_Id = district_id;
+        }
     }
 }

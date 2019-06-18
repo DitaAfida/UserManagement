@@ -12,5 +12,20 @@ namespace DataAccess.ViewModels
         public string Regency_Name { get; set; }
         
         public int Province_Id { get; set; }
+
+        public RegencyVM() { }
+
+        public RegencyVM(string regency_name, int province_id)
+        {
+            this.Regency_Name = regency_name;
+            this.Province_Id = province_id;
+        }
+
+        public void Update(int id, string regency_name, int province_id)
+        {
+            this.Id = id;
+            this.Regency_Name = regency_name;
+            this.Province_Id = province_id;
+        }
     }
 }
