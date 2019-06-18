@@ -38,5 +38,6 @@ namespace DataAccess.Models
             this.IsDelete = true;
             this.DeleteDate = DateTimeOffset.Now.ToLocalTime();
         }
+
     }
 }
