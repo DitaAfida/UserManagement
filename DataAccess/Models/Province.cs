@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Models
 {
-    [Table("TB_M_Role")]
-    public class Role
+    [Table("TB_M_Province")]
+    public class Province
     {
         public int Id { get; set; }
-        public int Role_Name { get; set; }
+        public string Province_Name { get; set; }
     }
 }

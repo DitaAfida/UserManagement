@@ -7,10 +7,15 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Models
 {
-    [Table("TB_M_Role")]
-    public class Role
+    [Table("TB_M_Regency")]
+    public class Regency
     {
         public int Id { get; set; }
-        public int Role_Name { get; set; }
+        public string Regency_Name { get; set; }
+
+        [ForeignKey("Province")]
+        public int Province_Id { get; set; }
+        public Province Province { get; set; }
+
     }
 }

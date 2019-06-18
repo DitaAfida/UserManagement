@@ -7,10 +7,14 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Models
 {
-    [Table("TB_M_Role")]
-    public class Role
+    [Table("TB_M_Village")]
+    public class Village
     {
         public int Id { get; set; }
-        public int Role_Name { get; set; }
+        public string Village_Name { get; set; }
+        
+        [ForeignKey("District")]
+        public int District_Id { get; set; }
+        public District District { get; set; }
     }
 }
