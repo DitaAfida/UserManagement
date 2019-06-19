@@ -12,6 +12,7 @@ namespace DataAccess.Models
     [Table("TB_M_Application")]
     public class Aplication : BaseModel
     {
+        public ICollection<User> ListUser { get; set; }
         public string Application_Name { get; set; }
 
         public Aplication() { }

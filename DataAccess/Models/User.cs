@@ -12,6 +12,8 @@ namespace DataAccess.Models
     [Table("TB_M_User")]
     public class User : BaseModel
     {
+        public ICollection<Role> ListRole {get; set; }
+        public ICollection<Aplication> ListAplication { get; set; }
         public string Password { get; set; }
 
         [ForeignKey("Employee")]

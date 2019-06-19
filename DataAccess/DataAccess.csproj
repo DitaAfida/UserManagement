@@ -53,9 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\MyContext.cs" />
-    <Compile Include="Migrations\201906180945476_newMigration.cs" />
-    <Compile Include="Migrations\201906180945476_newMigration.Designer.cs">
-      <DependentUpon>201906180945476_newMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201906190248331_newMigration.cs" />
+    <Compile Include="Migrations\201906190248331_newMigration.Designer.cs">
+      <DependentUpon>201906190248331_newMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Aplication.cs" />
@@ -68,8 +68,6 @@
     <Compile Include="Models\Religion.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\User.cs" />
-    <Compile Include="Models\UserApplication.cs" />
-    <Compile Include="Models\UserRole.cs" />
     <Compile Include="Models\Village.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -98,8 +96,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906180945476_newMigration.resx">
-      <DependentUpon>201906180945476_newMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906190248331_newMigration.resx">
+      <DependentUpon>201906190248331_newMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

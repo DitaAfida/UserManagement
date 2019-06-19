@@ -12,6 +12,7 @@ namespace DataAccess.Models
     [Table("TB_M_Role")]
     public class Role : BaseModel
     {
+        public ICollection<User>ListUser { get; set; }
         public string Role_Name { get; set; }
 
         public Role() { }
