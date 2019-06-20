@@ -78,7 +78,7 @@ C:\Users\User\Documents\Visual Studio 2015\UserManagement\Client\bin\Microsoft.O
 C:\Users\User\Documents\Visual Studio 2015\UserManagement\Client\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\User\Documents\Visual Studio 2015\UserManagement\Client\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\User\Documents\Visual Studio 2015\UserManagement\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
-C:\Users\User\Documents\Visual Studio 2015\UserManagement\Client\obj\Debug\Client.dll
-C:\Users\User\Documents\Visual Studio 2015\UserManagement\Client\obj\Debug\Client.pdb
 C:\Users\User\Documents\Visual Studio 2015\UserManagement\Client\obj\Debug\Client.Migrations.newMigration.resources
 C:\Users\User\Documents\Visual Studio 2015\UserManagement\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\Client\obj\Debug\Client.dll
+C:\Users\User\Documents\Visual Studio 2015\UserManagement\Client\obj\Debug\Client.pdb

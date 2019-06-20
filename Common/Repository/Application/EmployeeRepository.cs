@@ -59,6 +59,8 @@ namespace Common.Repository.Application
             push.Position = getPositionId;
             var getVillageId = myContext.Villages.Find(employeeVM.Village_Id);
             push.Village = getVillageId;
+            var getReligionId = myContext.Religions.Find(employeeVM.Religion_Id);
+            push.Religion = getReligionId;
             myContext.Employees.Add(push);
             var result = myContext.SaveChanges();
             if (result > 0)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,7 +33,7 @@ namespace Common.Repository.Application
 
         public List<District> Get()
         {
-            var get = myContext.Districts.Where(x => x.IsDelete == false).ToList();
+            var get = myContext.Districts.Include("Regency").Include("Regency.Province").Where(x => x.IsDelete == false).ToList();
             return get;
         }
 
@@ -44,8 +45,10 @@ namespace Common.Repository.Application
 
         public List<District> GetSearch(string values)
         {
-            var get = myContext.Districts.Where(x => (x.District_Name.Contains(values) ||
-               x.Id.ToString().Contains(values)) && x.IsDelete == false).ToList();
+            var get = myContext.Districts.Include("Regency").Include("Regency.Province").Where(x => (x.District_Name.Contains(values) ||
+               x.Id.ToString().Contains(values)||
+               x.Regency.Regency_Name.Contains(values) ||
+               x.Regency.Province.Province_Name.Contains(values)) && x.IsDelete == false).ToList();
             return get;
         }
 

@@ -13,9 +13,9 @@ namespace BusinessLogic.Service.Application
     {
         public RoleService() { }
         private readonly IRoleRepository iRoleRepository;
-        public RoleService(IRoleRepository _iRoleRepositoy)
+        public RoleService(IRoleRepository _iRoleRepository)
         {
-            iRoleRepository = _iRoleRepositoy;
+            iRoleRepository = _iRoleRepository;
         }
         bool status = false;
 

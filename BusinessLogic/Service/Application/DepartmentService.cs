@@ -9,7 +9,7 @@ using DataAccess.ViewModels;
 
 namespace BusinessLogic.Service.Application
 {
-    public class DepartmentService : IDepartementService
+    public class DepartmentService : IDepartmentService
     {
         public DepartmentService() { }
         private readonly IDepartmentRepository iDepartmentRepository;

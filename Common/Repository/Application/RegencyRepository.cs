@@ -32,7 +32,7 @@ namespace Common.Repository.Application
 
         public List<Regency> Get()
         {
-            var get = myContext.Regencys.Where(x => x.IsDelete == false).ToList();
+            var get = myContext.Regencys.Include("Province").Where(x => x.IsDelete == false).ToList();
             return get;
         }
 
@@ -44,8 +44,9 @@ namespace Common.Repository.Application
 
         public List<Regency> GetSearch(string values)
         {
-            var get = myContext.Regencys.Where(x => (x.Regency_Name.Contains(values) ||
-                x.Id.ToString().Contains(values)) && x.IsDelete == false).ToList();
+            var get = myContext.Regencys.Include("Province").Where(x => (x.Regency_Name.Contains(values) ||
+                x.Id.ToString().Contains(values)||
+                x.Province.Province_Name.Contains(values)) && x.IsDelete == false).ToList();
             return get;
         }
 

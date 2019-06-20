@@ -32,7 +32,7 @@ namespace Common.Repository.Application
 
         public List<User> Get()
         {
-            var get = myContext.Users.Where(x => x.IsDelete == false).ToList();
+            var get = myContext.Users.Include("Employee").Include("Employee.Religion").Include("Employee.Village").Include("Employee.Village.District").Include("Employee.Village.District.Regency").Include("Employee.Village.District.Regency.Province").Include("ListAplication").Include("ListRole").Where(x => x.IsDelete == false).ToList();
             return get;
         }
 
@@ -44,7 +44,15 @@ namespace Common.Repository.Application
 
         public List<User> GetSearch(string values)
         {
-            var get = myContext.Users.Where(x => x.Id.ToString().Contains(values) && x.IsDelete == false).ToList();
+            var get = myContext.Users.Include("Employee").Include("Employee.Department").Include("Employee.Religion").Include("Employee.Village").Include("Employee.Village.District").Include("Employee.Village.District.Regency").Include("Employee.Village.District.Regency.Province").
+                Where(x => x.Id.ToString().Contains(values) ||
+            x.Employee.Employee_Name.Contains(values)||
+            x.Employee.Department.Department_Name.Contains(values)||
+            x.Employee.Religion.Name.Contains(values)||
+            x.Employee.Village.Village_Name.Contains(values) ||
+            x.Employee.Village.District.District_Name.Contains(values) ||
+            x.Employee.Village.District.Regency.Regency_Name.Contains(values) ||
+            x.Employee.Village.District.Regency.Province.Province_Name.Contains(values) && x.IsDelete == false).ToList();
             return get;
         }
 

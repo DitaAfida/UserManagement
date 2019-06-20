@@ -32,7 +32,7 @@ namespace Common.Repository.Application
 
         public List<Village> Get()
         {
-            var get = myContext.Villages.Where(x => x.IsDelete == false).ToList();
+            var get = myContext.Villages.Include("District").Include("District.Regency").Include("District.Regency.Province").Where(x => x.IsDelete == false).ToList();
             return get;
         }
 
@@ -44,8 +44,10 @@ namespace Common.Repository.Application
 
         public List<Village> GetSearch(string values)
         {
-            var get = myContext.Villages.Where(x => (x.Village_Name.Contains(values) ||
-                x.Id.ToString().Contains(values)) && x.IsDelete == false).ToList();
+            var get = myContext.Villages.Include("District").Include("District.Regency").Include("District.Regency.Province").Where(x => (x.Village_Name.Contains(values) ||
+                x.Id.ToString().Contains(values) || x.District.District_Name.Contains(values) ||
+                x.District.Regency.Regency_Name.Contains(values) ||
+                x.District.Regency.Province.Province_Name.Contains(values))&& x.IsDelete == false).ToList();
             return get;
         }
 
